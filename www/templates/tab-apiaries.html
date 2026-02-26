@@ -1,0 +1,17 @@
+<ion-view view-title="Standbuch">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="apiary in apiaries" 
+      type="item-text-wrap" href="#/tab/apiaries/{{apiary.id}}">
+        <img ng-src="{{apiary.image}}">
+        <h2>{{apiary.name}}</h2>
+        <p>{{apiary.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <ion-option-button class="button-assertive" ng-click="remove(apiary)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+        <ion-option-button class="button-assertive" ng-click="add()">Beute Hinzufügen</ion-option-button>
+    </ion-list>
+  </ion-content>
+</ion-view>

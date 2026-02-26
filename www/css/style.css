@@ -1,0 +1,16 @@
+/* Empty. Add your own CSS if you like */
+ion-content {
+  --background: #00ff00;
+/*  background-image: url('../img/background2.jpg');*/
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+ion-toolbar {
+  --ion-background-color: linear-gradient(to right, #... 0%, #... 100%) !important;
+}
+
+ion-tab-bar {
+  --ion-background-color: linear-gradient(to right, #... 0%, #... 100%) !important;
+}
